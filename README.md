@@ -207,19 +207,23 @@ ProperInheritance (root)
 
 > **Expected Answer:** `student_B04.py`, `student_B05.py`, `student_B06.py`, `student_B07.py`, `student_B08.py`, `student_B09.py`, `student_B12.py`
 
-**Q3.** Were there any submissions that is not validated**? If so, which ones and what was the issue?
+**Q3.** Were there any submissions that could **not be validated**? If so, which ones?
 
-> **Expected Answer:** `student_B11.py` — it has syntax errors (missing colons after `__init__` and `off_road` method definitions).
+> **Expected Answer:** `student_B11.py`
 
-**Q4.** How many files matched the compound pattern in total?
+**Q4.** For the file that has a validation error, what is the exact problem? *(Name the file and explain briefly.)*
+
+> **Expected Answer (open-ended):** `student_B11.py` — it has syntax errors (missing colons after `__init__` and `off_road` method definitions).
+
+**Q5.** How many files matched the compound pattern in total?
 
 > **Expected Answer:** 4
 
-**Q5.** How many files matched both `has_parent_child` and `has_super_init`?
+**Q6.** How many files matched both `has_parent_child` and `has_super_init`?
 
 > **Expected Answer:** 8
 
-**Q6.** Which submissions matched `has_parent_child` but did **not** match `has_super_init`?
+**Q7.** Which submissions matched `has_parent_child` but did **not** match `has_super_init`?
 
 > **Expected Answer:** `student_B05.py`, `student_B08.py` — these have parent-child inheritance but the child class does not call `super().__init__()`.
 
@@ -314,10 +318,11 @@ ProperInheritance (root)
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Q1 — Matched                                                           | `student_B01.py`, `student_B02.py`, `student_B03.py`, `student_B10.py`                                                       |
 | Q2 — Not Matched                                                       | `student_B04.py`, `student_B05.py`, `student_B06.py`, `student_B07.py`, `student_B08.py`, `student_B09.py`, `student_B12.py` |
-| Q3 — Not Validated                                                     | `student_B11.py` (syntax errors)                                                                                             |
-| Q4 — How many matched                                                  | 4                                                                                                                            |
-| Q5 — Filter: has_parent_child AND has_super_init (the number of files) | 7                                                                                                                            |
-| Q6 — Filter: parent_child but not super_init                           | `student_B05.py`, `student_B08.py`                                                                                           |
+| Q3 — Not Validated                                                     | `student_B11.py`                                                                                                             |
+| Q4 — Validation error detail                                           | Missing colons after `__init__` and `off_road` method definitions                                                            |
+| Q5 — How many matched                                                  | 4                                                                                                                            |
+| Q6 — Filter: has_parent_child AND has_super_init (the number of files) | 8                                                                                                                            |
+| Q7 — Filter: parent_child but not super_init                           | `student_B05.py`, `student_B08.py`                                                                                           |
 
 
 ---
