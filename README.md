@@ -4,9 +4,9 @@
 
 | Item             | Detail                                                           |
 |------------------|------------------------------------------------------------------|
-| **Tool**         | Pyttern Visualizer (Compound Pattern)                            |
-| **Goal**         | Validate the usability of the compound pattern matching workflow |
-| **Participants** | participants with basic programming knowledge                    |
+| **Tool**         | Pyttern Visualizer ('Compound Pattern' section)                            |
+| **Goal**         | Validate the usability of the tool and the workflow to define and match compound patterns |
+| **Participants** | participants with programming knowledge                    |
 | **Duration**     | ~2 hours                                                         |
 | **Method**       | Moderated task-based usability test + post-test questionnaire    |
 
@@ -17,9 +17,9 @@
 | Phase                                                                                 | Duration |
 |---------------------------------------------------------------------------------------|----------|
 | 1. Introduction & Demo                                                                | ~20 min  |
-| 2. Task A — Basic Compound (with During-Test Questionnaire)                           | ~35 min  |
-| 3. Task B — Complex Compound (with During-Test Questionnaire)                         | ~45 min  |
-| 4. Post-Test Questionnaire (SUS + extra questions related with the tool for feedback) | ~20 min  |
+| 2. Task A — Basic Compound Pattern (with During-Test Questionnaire)                           | ~35 min  |
+| 3. Task B — Complex Compound Pattern (with During-Test Questionnaire)                         | ~45 min  |
+| 4. Post-Test Questionnaire (System Usability Study + extra questions related with the tool for feedback) | ~20 min  |
 
 ---
 
@@ -29,7 +29,7 @@
 
 Read the following to the participant:
 
-> "Thank you for participating in this usability test. We are evaluating a tool called **Pyttern Visualizer**, which helps analyze Python source code files against predefined patterns. Your feedback will help us improve the tool. There are no right or wrong answers — we are testing the tool, not you."
+> "Thank you for participating in this usability test. We are evaluating a tool called **Pyttern Visualizer**, a visualization tool for the Python language which helps analyze Python source code files against predeclared patterns. Your feedback will help us improve the tool. There are no right or wrong answers — we are testing the tool, not you."
 
 ### 1.2 Explain Core Concepts
 
@@ -37,7 +37,7 @@ Explain the following concepts to the participant before starting the tasks:
 
 1. **What is Pyttern?**
    - Pyttern is a pattern matching tool for Python source code.
-   - A **pattern** (`.pyt` file) describes a code structure using wildcards (`?` for single element, `?*` for zero or more elements).
+   - A **pattern** (`.pyt` file) describes a code structure using wildcards (such as `?` for single element, `?*` for zero or more elements).
    - When a code file is checked against a pattern, the result is either **matched** or **not matched**.
 
 2. **What is a Compound Pattern?**
@@ -46,7 +46,7 @@ Explain the following concepts to the participant before starting the tasks:
    - A code file **matches** the compound pattern only if it satisfies the full logical tree.
 
 3. **What is "Not Validated"?**
-   - If a code file has syntax errors or cannot be parsed, it is marked as **not validated** — the tool cannot determine a match result.
+   - If a code file has syntax errors or cannot be parsed, it is marked as **not validated** — the tool cannot determine a match result in that case.
 
 4. **Show the Compound Page screenshot for a quick overview**
 
@@ -60,7 +60,7 @@ Walk the participant through a minimal example:
 
 Read the following to the participant:
 
-> "For the following tasks, imagine you are a **programming instructor**. You have given your students a coding assignment and received their submissions. You want to use the Pyttern Visualizer to check which students followed the expected coding patterns and which did not."
+> "For the following tasks, imagine you are a **programming instructor**. You have given your students a coding assignment and received their submissions. You want to use the Pyttern Visualizer to check which students followed expected coding patterns and which did not."
 
 ---
 
@@ -94,7 +94,7 @@ Read the following to the participant:
 ### What the Participant Needs to Do
 
 1. Open the Pyttern Visualizer in your browser.
-2. **Build a compound pattern** named `ProperClassInit` using the 3 pattern files and the logical operators (AND, NOT) to encode the rule described above.
+2. **Build a compound pattern** named `ProperClassInit` using the 3 pattern files and the logical operators (AND, OR, NOT) to encode the rule described above.
 3. Upload the 5 student code files.
 4. Analyze the results and answer the questions below.
 
@@ -291,6 +291,7 @@ ProperInheritance (root)
 - **Confusion points:** Where did the participant hesitate, ask questions, or express confusion?
 - **Navigation:** Did the participant find the upload, filter, and visualization features easily?
 - **How many times you had to help:** The number of times you were called for help.
+- **Did the participants ask help from each other** during the tasks.
 
 ---
 
