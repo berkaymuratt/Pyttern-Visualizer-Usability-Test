@@ -201,11 +201,11 @@ ProperInheritance (root)
 
 **Q1.** Which student submissions **matched** the full compound pattern? *(List the file names.)*
 
-> **Expected Answer:** `student_B01.py`, `student_B02.py`, `student_B03.py`, `student_B10.py`
+> **Expected Answer:** `student_B01.py`, `student_B03.py`, `student_B04.py`, `student_B10.py`
 
 **Q2.** Which student submissions did **not match** the compound pattern? *(List the file names.)*
 
-> **Expected Answer:** `student_B04.py`, `student_B05.py`, `student_B06.py`, `student_B07.py`, `student_B08.py`, `student_B09.py`, `student_B12.py`
+> **Expected Answer:** `student_B02.py`, `student_B05.py`, `student_B06.py`, `student_B07.py`, `student_B08.py`, `student_B09.py`, `student_B12.py`
 
 **Q3.** Were there any submissions that could **not be validated**? If so, which ones?
 
@@ -221,7 +221,7 @@ ProperInheritance (root)
 
 **Q6.** How many files matched both `has_parent_child` and `has_super_init`?
 
-> **Expected Answer:** 8
+> **Expected Answer:** 7
 
 **Q7.** Which submissions matched `has_parent_child` but did **not** match `has_super_init`?
 
@@ -233,17 +233,17 @@ ProperInheritance (root)
 | File        | has_parent_child | has_super_init | has_init_return | has_early_return | has_method_return |     Compound      |
 |-------------|:----------------:|:--------------:|:---------------:|:----------------:|:-----------------:|:-----------------:|
 | student_B01 |      Match       |     Match      |    No Match     |     No Match     |       Match       |     **Match**     |
-| student_B02 |      Match       |     Match      |    No Match     |      Match       |     No Match      |     **Match**     |
-| student_B03 |      Match       |     Match      |    No Match     |      Match       |       Match       |     **Match**     |
-| student_B04 |      Match       |     Match      |      Match      |     No Match     |       Match       |   **No Match**    |
+| student_B02 |      Match       |     Match      |    No Match     |     No Match     |     No Match      |   **No Match**    |
+| student_B03 |      Match       |     Match      |    No Match     |     No Match     |       Match       |     **Match**     |
+| student_B04 |      Match       |     Match      |    No Match     |     No Match     |       Match       |     **Match**     |
 | student_B05 |      Match       |    No Match    |    No Match     |     No Match     |       Match       |   **No Match**    |
 | student_B06 |     No Match     |    No Match    |    No Match     |      Match       |       Match       |   **No Match**    |
 | student_B07 |      Match       |     Match      |    No Match     |     No Match     |     No Match      |   **No Match**    |
-| student_B08 |      Match       |    No Match    |    No Match     |      Match       |       Match       |   **No Match**    |
+| student_B08 |      Match       |    No Match    |    No Match     |     No Match     |       Match       |   **No Match**    |
 | student_B09 |     No Match     |    No Match    |    No Match     |     No Match     |     No Match      |   **No Match**    |
 | student_B10 |      Match       |     Match      |    No Match     |     No Match     |       Match       |     **Match**     |
 | student_B11 |        —         |       —        |        —        |        —         |         —         | **Not Validated** |
-| student_B12 |      Match       |     Match      |      Match      |      Match       |     No Match      |   **No Match**    |
+| student_B12 |      Match       |     Match      |    No Match     |     No Match     |     No Match      |   **No Match**    |
 
 ---
 
@@ -316,12 +316,12 @@ ProperInheritance (root)
 
 | Question                                                               | Answer                                                                                                                       |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Q1 — Matched                                                           | `student_B01.py`, `student_B02.py`, `student_B03.py`, `student_B10.py`                                                       |
-| Q2 — Not Matched                                                       | `student_B04.py`, `student_B05.py`, `student_B06.py`, `student_B07.py`, `student_B08.py`, `student_B09.py`, `student_B12.py` |
+| Q1 — Matched                                                           | `student_B01.py`, `student_B03.py`, `student_B04.py`, `student_B10.py`                                                       |
+| Q2 — Not Matched                                                       | `student_B02.py`, `student_B05.py`, `student_B06.py`, `student_B07.py`, `student_B08.py`, `student_B09.py`, `student_B12.py` |
 | Q3 — Not Validated                                                     | `student_B11.py`                                                                                                             |
 | Q4 — Validation error detail                                           | Missing colons after `__init__` and `off_road` method definitions                                                            |
 | Q5 — How many matched                                                  | 4                                                                                                                            |
-| Q6 — Filter: has_parent_child AND has_super_init (the number of files) | 8                                                                                                                            |
+| Q6 — Filter: has_parent_child AND has_super_init (the number of files) | 7                                                                                                                            |
 | Q7 — Filter: parent_child but not super_init                           | `student_B05.py`, `student_B08.py`                                                                                           |
 
 
@@ -343,7 +343,7 @@ ProperInheritance (root)
 ### 2) Task A Questions
    - The questions for Task A during the test
 
-### 3) Task A Questions
+### 3) Task B Questions
    - The questions for Task B during the test
 
 ### 4) SUS Questions
